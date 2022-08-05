@@ -11,7 +11,7 @@ import Topbuttons from "./Components/topbuttons";
 const Home: NextPage = () => {
   const { address } = useAccount();
   const editionDrop = useEditionDrop(
-    "0xF1cC36db8b8C48cCe1ebb41Ca8050dd0C36c0897"
+    "0xe5e351BC6f55d74B85B2360E8342cE6E446b97B1"
   );
   const { mutate: claimNft, isLoading, error } = useClaimNFT(editionDrop);
   if (error) {
@@ -26,17 +26,17 @@ const Home: NextPage = () => {
         <meta property="og:locale" content="en" />
 
         {/* TITLES */}
-        <title>Probably Nothing NFT Drop</title>
-        <meta name="apple-mobile-web-app-title" content="Probably Nothing" />
-        <meta name="twitter:title" content="Probably Nothing NFT Drop" />
-        <meta property="og:title" content="Probably Nothing NFT Drop" />
-        <meta property="og:site_name" content="Probably Nothing NFT Drop" />
+        <title>R3SUM3 by joshcs.eth</title>
+        <meta name="apple-mobile-web-app-title" content="R3SUM3" />
+        <meta name="twitter:title" content="R3SUM3 by joshcs.eth" />
+        <meta property="og:title" content="R3SUM3 by joshcs.eth" />
+        <meta property="og:site_name" content="R3SUM3 by joshcs.eth" />
 
         {/* LINKS */}
-        <link rel="canonical" href="https://probablynothing.ink" />
-        <meta name="twitter:url" content="https://probablynothing.ink" />
-        <meta property="og:url" content="https://probablynothing.ink" />
-        <meta name="twitter:site:domain" content="probablynothing.ink" />
+        <link rel="canonical" href="https://r3sum3.xyz" />
+        <meta name="twitter:url" content="https://r3sum3.xyz" />
+        <meta property="og:url" content="https://r3sum3.xyz" />
+        <meta name="twitter:site:domain" content="r3sum3.xyz" />
 
         {/* FAVICONS */}
         <meta name="favicon" content="/favicon.ico" />
@@ -79,63 +79,65 @@ const Home: NextPage = () => {
         {/* DESCRIPTION */}
         <meta
           property="og:description"
-          content="Claim your Probably Nothing NFT here."
+          content="Mint joshcs.eth's R3SUM3 Here"
         />
         <meta
           name="twitter:description"
-          content="Claim your Probably Nothing NFT here."
+          content="Mint joshcs.eth's R3SUM3 Here"
         />
-        <meta
-          name="description"
-          content="Claim your Probably Nothing NFT here."
-        />
+        <meta name="description" content="Mint joshcs.eth's R3SUM3 Here" />
 
         {/* TWITTER */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@developer_dao" />
+        <meta name="twitter:site" content="@JoshCStein" />
 
         {/* IMAGE */}
         <meta
           property="og:image:url"
-          content="https://raw.githubusercontent.com/jcstein/jpegs/main/probablynothing-og.png"
+          content="https://raw.githubusercontent.com/jcstein/jpegs/main/r3sum3.png"
         />
         <meta
           property="og:image:secure_url"
-          content="https://raw.githubusercontent.com/jcstein/jpegs/main/probablynothing-og.png"
+          content="https://raw.githubusercontent.com/jcstein/jpegs/main/r3sum3.png"
         />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/jcstein/jpegs/main/probablynothing-og.png"
+          content="https://raw.githubusercontent.com/jcstein/jpegs/main/r3sum3.png"
         />
         <meta
           name="twitter:image"
-          content="https://raw.githubusercontent.com/jcstein/jpegs/main/probablynothing-og.png"
+          content="https://raw.githubusercontent.com/jcstein/jpegs/main/r3sum3.png"
         />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:alt" content="Probably Nothing NFT Drop" />
+        <meta property="og:image:alt" content="R3SUM3" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* PLAUSIBLE ANALYTICS */}
         <script
           defer
-          data-domain="probablynothing.ink"
+          data-domain="r3sum3.xyz"
           src="https://plausible.io/js/plausible.js"
         ></script>
       </Head>
       <Topbuttons />
       <main className={styles.main}>
-        <Heading size="xl" textAlign="center">
-          Probably Nothing Edition Drop
+        <Heading size="xl" textAlign="center" pb="3">
+          joshcs.eth résumé minting dApp
+        </Heading>
+        <Heading size="md" textAlign="center">
+          After minting, my résumé will appear in your wallet 🧙‍♂️
+          <br />
+          No more losing PDFs 😎
         </Heading>
         {!address ? (
           <Image
-            src="./probablynothing.png"
+            src="./r3sum3.png"
             rounded="full"
-            width="42%"
+            width="69%"
             mt="5"
-            maxW="300px"
-            alt="Probably Nothing"
+            maxW="500px"
+            alt="R3SUM3"
           />
         ) : null}
         <br />
@@ -148,15 +150,14 @@ const Home: NextPage = () => {
         {address ? (
           <>
             <Image
-              src="./probablynothing.png"
+              src="./r3sum3.png"
               rounded="2xl"
-              width="42%"
-              maxW="300px"
+              width="69%"
+              maxW="500px"
               mt="5"
               mb="3"
-              alt="Probably Nothing"
+              alt="R3SUM3"
             />
-            {/* <Text>0 out of ∞ Minted</Text> */}
             {isLoading ? (
               <Button
                 colorScheme="purple"
@@ -173,13 +174,13 @@ const Home: NextPage = () => {
                 colorScheme="purple"
                 disabled={isLoading}
                 onClick={() =>
-                  claimNft({ to: address as any, tokenId: 1, quantity: 1 })
+                  claimNft({ to: address as any, tokenId: 0, quantity: 1 })
                 }
                 _hover={{ transform: "scale(1.1)" }}
                 size="lg"
                 my="3"
               >
-                Claim Probably Nothing!
+                Claim R3SUM3!
               </Button>
             )}
             <Button
@@ -187,7 +188,7 @@ const Home: NextPage = () => {
               rightIcon={<GiSailboat />}
               onClick={() =>
                 window.open(
-                  "https://testnets.opensea.io/assets/rinkeby/0xf1cc36db8b8c48cce1ebb41ca8050dd0c36c0897/1",
+                  "https://testnets.opensea.io/assets/rinkeby/0xe5e351bc6f55d74b85b2360e8342ce6e446b97b1/0",
                   "_blank"
                 )
               }
