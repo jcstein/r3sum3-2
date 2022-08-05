@@ -26,11 +26,11 @@ const Home: NextPage = () => {
         <meta property="og:locale" content="en" />
 
         {/* TITLES */}
-        <title>R3SUM3 by joshcs.eth</title>
+        <title>r3sum3 by joshcs.eth</title>
         <meta name="apple-mobile-web-app-title" content="R3SUM3" />
-        <meta name="twitter:title" content="R3SUM3 by joshcs.eth" />
-        <meta property="og:title" content="R3SUM3 by joshcs.eth" />
-        <meta property="og:site_name" content="R3SUM3 by joshcs.eth" />
+        <meta name="twitter:title" content="r3sum3 by joshcs.eth" />
+        <meta property="og:title" content="r3sum3 by joshcs.eth" />
+        <meta property="og:site_name" content="r3sum3 by joshcs.eth" />
 
         {/* LINKS */}
         <link rel="canonical" href="https://r3sum3.xyz" />
@@ -79,13 +79,13 @@ const Home: NextPage = () => {
         {/* DESCRIPTION */}
         <meta
           property="og:description"
-          content="Mint joshcs.eth's R3SUM3 here!"
+          content="Mint joshcs.eth's r3sum3 here!"
         />
         <meta
           name="twitter:description"
-          content="Mint joshcs.eth's R3SUM3 here!"
+          content="Mint joshcs.eth's r3sum3 here!"
         />
-        <meta name="description" content="Mint joshcs.eth's R3SUM3 here!" />
+        <meta name="description" content="Mint joshcs.eth's r3sum3 here!" />
 
         {/* TWITTER */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
           content="https://raw.githubusercontent.com/jcstein/jpegs/main/r3sum3.png"
         />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:alt" content="R3SUM3" />
+        <meta property="og:image:alt" content="r3sum3" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
             width="69%"
             mt="5"
             maxW="500px"
-            alt="R3SUM3"
+            alt="r3sum3"
           />
         ) : null}
         <br />
@@ -156,7 +156,7 @@ const Home: NextPage = () => {
               maxW="500px"
               mt="5"
               mb="3"
-              alt="R3SUM3"
+              alt="r3sum3"
             />
             {isLoading ? (
               <Button
@@ -180,7 +180,7 @@ const Home: NextPage = () => {
                 size="lg"
                 my="3"
               >
-                Claim R3SUM3!
+                Claim r3sum3!
               </Button>
             )}
             <Button
