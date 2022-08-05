@@ -79,13 +79,13 @@ const Home: NextPage = () => {
         {/* DESCRIPTION */}
         <meta
           property="og:description"
-          content="Mint joshcs.eth's R3SUM3 Here"
+          content="Mint joshcs.eth's R3SUM3 here!"
         />
         <meta
           name="twitter:description"
-          content="Mint joshcs.eth's R3SUM3 Here"
+          content="Mint joshcs.eth's R3SUM3 here!"
         />
-        <meta name="description" content="Mint joshcs.eth's R3SUM3 Here" />
+        <meta name="description" content="Mint joshcs.eth's R3SUM3 here!" />
 
         {/* TWITTER */}
         <meta name="twitter:card" content="summary_large_image" />
