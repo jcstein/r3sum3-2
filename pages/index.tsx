@@ -114,11 +114,11 @@ const Home: NextPage = () => {
         <meta property="og:image:height" content="630" />
 
         {/* PLAUSIBLE ANALYTICS */}
-        <script
+        {/* <script
           defer
           data-domain="r3sum3.xyz"
           src="https://plausible.io/js/plausible.js"
-        ></script>
+        ></script> */}
       </Head>
       <Topbuttons />
       <main className={styles.main}>
