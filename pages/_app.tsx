@@ -19,6 +19,7 @@ import {
 import "@rainbow-me/rainbowkit/styles.css";
 import { ThirdwebSDKProvider, ChainId } from "@thirdweb-dev/react";
 import { ChakraProvider, ColorModeScript, extendTheme } from "@chakra-ui/react";
+import PlausibleProvider from "next-plausible";
 
 const config = {
   initialColorMode: "dark",
@@ -97,16 +98,20 @@ function ThirdwebProvider({ wagmiClient, children }: any) {
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
-      <WagmiConfig client={wagmiClient}>
-        <RainbowKitProvider chains={chains} theme={midnightTheme()} coolMode>
-          <ThirdwebProvider wagmiClient={wagmiClient}>
-            <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-            <Component {...pageProps} />
-          </ThirdwebProvider>
-        </RainbowKitProvider>
-      </WagmiConfig>
-    </ChakraProvider>
+    <PlausibleProvider domain="r3sum3.xyz">
+      <ChakraProvider theme={theme}>
+        <WagmiConfig client={wagmiClient}>
+          <RainbowKitProvider chains={chains} theme={midnightTheme()} coolMode>
+            <ThirdwebProvider wagmiClient={wagmiClient}>
+              <ColorModeScript
+                initialColorMode={theme.config.initialColorMode}
+              />
+              <Component {...pageProps} />
+            </ThirdwebProvider>
+          </RainbowKitProvider>
+        </WagmiConfig>
+      </ChakraProvider>
+    </PlausibleProvider>
   );
 }
 
